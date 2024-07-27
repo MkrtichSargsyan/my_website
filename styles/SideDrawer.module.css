@@ -1,0 +1,149 @@
+.side_drawer_open {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  background-color: #020308;
+  height: 100vh !important;
+  color: rgb(99 99 99);
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 310px;
+  transition: 850ms;
+  z-index: 1000;
+}
+
+.side_drawer_close {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #020308;
+  height: 100vh !important;
+  color: rgb(99 99 99);
+  font-family: 'Source Sans Pro', sans-serif;
+  transform: translateX(-100%);
+  transition: 850ms;
+}
+
+.toggler{
+  position: absolute;
+  top: 30px;
+  right: -45px;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+.logo .my_name{
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.logo .position{
+  float: right;
+  font-size: 14px;
+}
+
+/* navigation */
+
+.navigation{
+  flex-grow: 1;
+}
+
+.navigation > .active {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.navigation ul{
+  padding-top: 20px;
+}
+
+.navigation ul li{
+  width: 100%;
+  padding: 20px 40px 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.navigation ul li:hover{
+  background-color: #09090a;
+  cursor: pointer;
+}
+
+.navigation ul li:hover .title{
+  color: rgb(173, 173, 173);
+}
+
+.navigation img{
+  width: 25px;
+}
+
+.navigation a{
+  text-decoration: none;
+  color: rgb(99 99 99);
+}
+
+.navigation .title{
+  font-size: 18px;
+}
+
+/* social */
+
+.social{
+  border-top: 1px solid rgb(65, 72, 76);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.social a{
+    color: rgb(65, 72, 76);
+    transition: color 0.35s ease-in-out 0s;
+    text-decoration: none;
+}
+
+.social a:hover{
+  color: aliceblue;
+}
+
+.social a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .side_drawer_open {
+    width: 284px;
+    z-index: 1000;
+  }
+  .logo .my_name{
+    font-size: 18px;
+    z-index: 1000;
+  }
+}

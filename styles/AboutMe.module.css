@@ -1,0 +1,97 @@
+.about_section {
+  background-color: #b8c9cc1f;
+}
+
+.about_section .container{
+  padding: 50px 0;
+}
+
+.aboutMe {
+  display: flex;
+}
+
+.aboutMe h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.aboutMe p {
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #767777;
+}
+
+.name {
+  color: brown;
+}
+
+.aboutMe .address {
+  align-items: flex-start;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  color: #767777;
+  font-size: 16px;
+}
+
+.address li {
+  padding: 20px 0;
+}
+
+.address li:not(:last-child) {
+  border-bottom: 1px solid #c9d4d0;
+}
+
+.address li:nth-child(2) a {
+  color: brown;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.address li:nth-child(2) a:hover {
+  color: rgb(51, 49, 49);
+  transition: all 0.5s ease;
+}
+
+.address ul span {
+  color: black;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.address .cv_button {
+  background: brown;
+  color: white;
+  text-decoration: none;
+  padding: 17px;
+  margin-top: 20px;
+  border-radius: 76px;
+  transition: all 0.5s ease;
+}
+
+.address .cv_button:hover{
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1.05) perspective(1px);
+}
+
+@media screen and (max-width: 768px) {
+ 
+  .aboutMe{
+    flex-direction: column;
+  }
+
+  .aboutMe h2{
+    text-align: center;
+  }
+
+  .aboutMe p{
+    margin-bottom: 45px;
+  }
+
+  .aboutMe .address{
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
