@@ -1,0 +1,9 @@
+.ml {
+  transition: 850ms;
+  margin-left: 310px;
+}
+
+.none {
+  margin-left: 0;
+  transition: 850ms;
+}
